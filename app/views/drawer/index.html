@@ -1,0 +1,8 @@
+<div class="drawer" ng-controller="IndexCtrl">
+  <div class="list">
+    <a class="item item-icon-left" href="#" ng-click='switchMenu(item)' ng-class="{ active: isActive(item) }" ng-repeat="item in drawer">
+      <i class="icon {{item.iconClass}}"></i>
+      {{item.name}}
+    </a>
+  </div>
+</div>

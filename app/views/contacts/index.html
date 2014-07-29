@@ -1,0 +1,17 @@
+<div ng-controller="ContactIndexCtrl">
+  <navigation-bar title="Contacts">
+    <left-button icon="/icons/pill@2x" onTap='openDrawer()' class="button button-clear right">
+    </left-button>
+    <right-button onTap='addContact()' icon="/icons/telescope@2x">
+    </right-button>
+  </navigation-bar>
+  <ul class="list">
+    <a class="item item-avatar" href="#" ng-repeat="contact in contacts" ng-click="viewContact(contact.id)">
+      <!-- <img src="venkman.jpg"> -->
+      <!-- <img class="icon ion-person"> </img> -->
+      <img src="http://placehold.it/300x200/00aeef/fff"/>
+      <h2>{{ contact.email }}</h2>
+      <p> {{ contact.first_name + ' ' + contact.last_name }} </p>
+    </a>
+  </ul>
+</div>

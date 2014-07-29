@@ -1,0 +1,33 @@
+html, body{
+  height: 100%;
+  background-color: white;
+}
+
+.dark-grey-wrapper{
+  background-color: #3b3b3b;
+}
+
+.angular-google-map-container { 
+  height: 430px; 
+}
+
+.full-height{
+  height: 100%;
+}
+
+.list .dark-grey{
+  background-color: #3b3b3b;
+}
+
+.item .dark-grey{
+  background-color: #3b3b3b;
+  border-color: black;
+}
+
+.dark-grey a{
+  border-color: black;
+}
+
+.dark-grey a, .dark-grey i, .dark-grey p, .dark-grey h2{
+  color: white;
+}

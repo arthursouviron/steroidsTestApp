@@ -1,0 +1,25 @@
+[
+  {
+    "id": "contacts",
+    "active": true,
+    "name": "Index",
+    "iconClass" : "ion-person-stalker"
+
+  },
+  {
+    "id": "settings",
+    "name": "Settings",
+    "iconClass" : "ion-gear-a"
+
+  },
+  {
+    "id" : "map",
+    "name" : "Map",
+    "iconClass" : "ion-location"
+  },
+  {
+    "id" : "logout",
+    "name" : "Log out",
+    "iconClass" : "ion-power"
+  }
+]

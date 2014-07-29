@@ -1,0 +1,73 @@
+{
+  "appearance": {
+    "nav_bar_portrait_background_image": "",
+    "nav_bar_landscape_background_image": "",
+    "nav_bar_tint_color": "#145fd7",
+    "nav_bar_title_text_color": "#ffffff",
+    "nav_bar_title_shadow_color": "",
+    "nav_bar_button_tint_color": "#ffffff",
+    "nav_bar_button_title_text_color": "",
+    "nav_bar_button_title_shadow_color": "",
+    "tab_bar_background_image": "",
+    "tab_bar_tint_color": "",
+    "tab_bar_button_title_text_color": "",
+    "tab_bar_button_title_shadow_color": "",
+    "tab_bar_selected_icon_tint_color": "",
+    "tab_bar_selected_indicator_background_image": "",
+    "loading_screen_color": "#FFFFFF"
+  },
+  "preloads": [
+    {
+      "id": "login",
+      "location": "http://localhost/views/devise/sign_in.html"
+    },
+    {
+      "id": "settings",
+      "location": "http://localhost/views/settings/index.html"
+    },
+    {
+      "id": "contacts",
+      "location": "http://localhost/views/contacts/index.html"
+    },
+    {
+      "id": "logout",
+      "location": "http://localhost/views/devise/sign_out.html"
+    },
+    {
+      "id": "signup",
+      "location": "http://localhost/views/devise/sign_up.html"
+    },
+    {
+      "id": "new_contact",
+      "location": "http://localhost/views/contacts/new.html"
+    },
+    {
+      "id": "map",
+      "location": "http://localhost/views/map/index.html"
+    }
+  ],
+  "drawers": {
+    "left": {
+      "id": "drawer",
+      "location": "http://localhost/views/drawer/index.html",
+      "showOnAppLoad": false,
+      "widthOfDrawerInPixels": 250
+    },
+    "options": {
+      "centerViewInteractionMode": "Full",
+      "closeGestures": [
+        "PanNavBar",
+        "PanCenterView",
+        "TapCenterView"
+      ],
+      "openGestures": [
+        "PanNavBar",
+        "PanCenterView"
+      ],
+      "showShadow": true,
+      "stretchDrawer": true,
+      "widthOfLayerInPixels": 0,
+      "strechDrawer": true
+    }
+  }
+}

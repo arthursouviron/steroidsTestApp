@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Steroids App</title>
+
+  <link rel="stylesheet" href="/vendor/ionic/css/ionic.css" />
+  <link rel="stylesheet" href="/stylesheets/application.css" />
+
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
+
+
+  <script src="/components/ng-file-upload-shim/angular-file-upload-shim.min.js"></script> 
+  <script src="/components/angular/angular.min.js"></script>
+  <script src="/components/ng-file-upload/angular-file-upload.min.js"></script> 
+
+
+
+  <script src="/components/angular-touch/angular-touch.min.js"></script>
+
+  <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+
+  <script src="/components/lodash/dist/lodash.min.js"></script>
+  <script src='/components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+
+  <script src="/components/restangular/dist/restangular.min.js"></script>
+  
+  <script src="/directives/navigationBar.js"></script>
+  <script src="/models/contacts.js"></script>
+  <script src="/services/contacts.js"></script>
+  <script src="/controllers/contacts.js"></script>
+</head>
+<!-- <body ng-app="mobileApp" class="content"> -->
+<body ng-app="contactsApp" class="content">
+
+  <div ng-controller="ContactNewCtrl">
+  <navigation-bar title="Nouveau contact">
+    <!-- <left-button></left-button> -->
+    <!--  <right-button onTap='addContact()' icon="/icons/steroids">
+    </right-button> -->
+  </navigation-bar>
+
+
+  <!-- <div class="bar bar-header bar-royal">
+    <button ng-click='goBack()' class="button button-clear">
+      <i class="icon ion-chevron-left left"></i>
+    </button>
+    <h1 class="title"> New Contact</h1>
+  </div> -->
+  <div class='content'>
+    <h1></h1>
+    <div>
+      <label class="item item-input">
+        <input type="text" placeholder="Email" ng-model="email">
+      </label>
+    </div>
+
+    <div>
+      <label class="item item-input">
+        <input type="text" placeholder="First Name" ng-model="first_name">
+      </label>
+    </div>
+
+    <div>
+      <label class="item item-input">
+        <input type="text" placeholder="Last Name" ng-model="last_name">
+      </label>
+    </div>
+
+
+    <div ng-click="createContact()">
+      <button class="button button-positive button-full">
+        Create contact
+      </button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

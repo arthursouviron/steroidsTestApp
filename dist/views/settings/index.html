@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Steroids App</title>
+
+  <link rel="stylesheet" href="/vendor/ionic/css/ionic.css" />
+  <link rel="stylesheet" href="/stylesheets/application.css" />
+
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
+
+
+  <script src="/components/ng-file-upload-shim/angular-file-upload-shim.min.js"></script> 
+  <script src="/components/angular/angular.min.js"></script>
+  <script src="/components/ng-file-upload/angular-file-upload.min.js"></script> 
+
+
+
+  <script src="/components/angular-touch/angular-touch.min.js"></script>
+
+  <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+
+  <script src="/components/lodash/dist/lodash.min.js"></script>
+  <script src='/components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+
+  <script src="/components/restangular/dist/restangular.min.js"></script>
+  
+  <script src="/directives/navigationBar.js"></script>
+  <script src="/models/settings.js"></script>
+  <script src="/services/settings.js"></script>
+  <script src="/controllers/settings.js"></script>
+</head>
+<!-- <body ng-app="mobileApp" class="content"> -->
+<body ng-app="settingsApp" class="content">
+
+  <div ng-controller="UserSettingsCtrl">
+  <!--   <div class="bar bar-header bar-royal">
+      <button ng-click='openDrawer()' class="button button-clear">
+        <i class="icon ion-navicon"></i>
+      </button>
+      <h1 class="title"> My Profile</h1>
+    </div> -->
+
+  <navigation-bar title="My Profile">
+    <left-button icon="/icons/pill@2x" onTap='openDrawer()' class="button button-clear right">
+    </left-button>
+  </navigation-bar>
+
+  <img ng-src="{{avatar}}"></img>
+
+  <div class='content'>
+   
+    <button ng-click="takePicture()" class="button button-full">Take Picture</button>
+
+   <!--  <div ng-click="saveProfile()">
+      <button class="button button-positive button-full">
+        Save Avatar
+      </button>
+    </div> -->
+  </div>
+</div>
+
+</body>
+</html>

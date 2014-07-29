@@ -1,0 +1,42 @@
+<div ng-controller="ContactNewCtrl">
+  <navigation-bar title="Nouveau contact">
+    <!-- <left-button></left-button> -->
+    <!--  <right-button onTap='addContact()' icon="/icons/steroids">
+    </right-button> -->
+  </navigation-bar>
+
+
+  <!-- <div class="bar bar-header bar-royal">
+    <button ng-click='goBack()' class="button button-clear">
+      <i class="icon ion-chevron-left left"></i>
+    </button>
+    <h1 class="title"> New Contact</h1>
+  </div> -->
+  <div class='content'>
+    <h1></h1>
+    <div>
+      <label class="item item-input">
+        <input type="text" placeholder="Email" ng-model="email">
+      </label>
+    </div>
+
+    <div>
+      <label class="item item-input">
+        <input type="text" placeholder="First Name" ng-model="first_name">
+      </label>
+    </div>
+
+    <div>
+      <label class="item item-input">
+        <input type="text" placeholder="Last Name" ng-model="last_name">
+      </label>
+    </div>
+
+
+    <div ng-click="createContact()">
+      <button class="button button-positive button-full">
+        Create contact
+      </button>
+    </div>
+  </div>
+</div>

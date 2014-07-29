@@ -1,0 +1,26 @@
+<div ng-controller="DeviseSignUpCtrl">
+  <div>
+    <label class="item item-input">
+      <input type="text" placeholder="Email" ng-model="email">
+    </label>
+  </div>
+
+  <div>
+    <label class="item item-input">
+      <input type="password" placeholder="Password" ng-model="password">
+    </label>
+  </div>
+  
+  <div>
+    <label class="item item-input">
+      <input type="password" placeholder="Password confirmation" ng-model="password_confirmation">
+    </label>
+  </div>
+
+
+  <div id="sign_in" ng-click="signUp()">
+    <button class="button button-full button-positive">
+      Create an account
+    </button>
+  </div>
+</div>

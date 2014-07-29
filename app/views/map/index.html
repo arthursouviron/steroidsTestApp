@@ -1,0 +1,14 @@
+<div ng-controller="IndexCtrl">
+  <navigation-bar title="Map">
+    <left-button icon="/icons/pill@2x" onTap='openDrawer()'>
+    </left-button>
+    <right-button onTap='getPosition()' icon="/icons/telescope@2x">
+    </right-button>
+  </navigation-bar>
+  <!-- <button class="button button-full button-positive" ng-click="getPosition()">
+    Find my position
+  </button> -->
+  <google-map center="map.center" draggable="true" zoom="map.zoom">
+    <marker ng-repeat="marker in map.markers" coords="marker.coordinates"></marker>
+  </google-map>
+</div>

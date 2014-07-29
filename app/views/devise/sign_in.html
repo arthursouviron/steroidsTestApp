@@ -1,0 +1,26 @@
+<div ng-controller="DeviseLoginCtrl">
+  <navigation-bar title="Login"></navigation-bar>
+  <div>
+    <label class="item item-input">
+      <input type="text" placeholder="Email" ng-model="email">
+    </label>
+  </div>
+
+  <div>
+    <label class="item item-input">
+      <input type="password" placeholder="Password" ng-model="password">
+    </label>
+  </div>
+
+  <div ng-click="login()">
+    <button class="button button-full button-balanced">
+      Sign In
+    </button>
+  </div>
+  <div ng-click="signUp()">
+    <button class="button button-full button-positive">
+      Create an account
+    </button>
+  </div>
+
+</div>

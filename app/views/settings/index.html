@@ -1,0 +1,26 @@
+<div ng-controller="UserSettingsCtrl">
+  <!--   <div class="bar bar-header bar-royal">
+      <button ng-click='openDrawer()' class="button button-clear">
+        <i class="icon ion-navicon"></i>
+      </button>
+      <h1 class="title"> My Profile</h1>
+    </div> -->
+
+  <navigation-bar title="My Profile">
+    <left-button icon="/icons/pill@2x" onTap='openDrawer()' class="button button-clear right">
+    </left-button>
+  </navigation-bar>
+
+  <img ng-src="{{avatar}}"></img>
+
+  <div class='content'>
+   
+    <button ng-click="takePicture()" class="button button-full">Take Picture</button>
+
+   <!--  <div ng-click="saveProfile()">
+      <button class="button button-positive button-full">
+        Save Avatar
+      </button>
+    </div> -->
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Steroids App</title>
+
+  <link rel="stylesheet" href="/vendor/ionic/css/ionic.css" />
+  <link rel="stylesheet" href="/stylesheets/application.css" />
+
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
+
+
+  <script src="/components/ng-file-upload-shim/angular-file-upload-shim.min.js"></script> 
+  <script src="/components/angular/angular.min.js"></script>
+  <script src="/components/ng-file-upload/angular-file-upload.min.js"></script> 
+
+
+
+  <script src="/components/angular-touch/angular-touch.min.js"></script>
+
+  <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+
+  <script src="/components/lodash/dist/lodash.min.js"></script>
+  <script src='/components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+
+  <script src="/components/restangular/dist/restangular.min.js"></script>
+  
+  <script src="/directives/navigationBar.js"></script>
+  <script src="/models/contacts.js"></script>
+  <script src="/services/contacts.js"></script>
+  <script src="/controllers/contacts.js"></script>
+</head>
+<!-- <body ng-app="mobileApp" class="content"> -->
+<body ng-app="contactsApp" class="content">
+
+  <div ng-controller="ContactIndexCtrl">
+  <navigation-bar title="Contacts">
+    <left-button icon="/icons/pill@2x" onTap='openDrawer()' class="button button-clear right">
+    </left-button>
+    <right-button onTap='addContact()' icon="/icons/telescope@2x">
+    </right-button>
+  </navigation-bar>
+  <ul class="list">
+    <a class="item item-avatar" href="#" ng-repeat="contact in contacts" ng-click="viewContact(contact.id)">
+      <!-- <img src="venkman.jpg"> -->
+      <!-- <img class="icon ion-person"> </img> -->
+      <img src="http://placehold.it/300x200/00aeef/fff"/>
+      <h2>{{ contact.email }}</h2>
+      <p> {{ contact.first_name + ' ' + contact.last_name }} </p>
+    </a>
+  </ul>
+</div>
+
+</body>
+</html>
